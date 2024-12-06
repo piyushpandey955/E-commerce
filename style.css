@@ -147,6 +147,12 @@ nav ul li a{
   justify-content: center;
   contain: content;
 }
+
+.banner1 img{
+  width: 100%;
+  height: 100%;
+  margin-top: 40px;
+}
 .crazy-deals{
   max-height: fit-content;
   max-width: 100%;

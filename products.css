@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@366.73&display=swap');
+
+html, body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+/* header */
+header{
+  position: fixed;
+  top: 0;
+  background: white;
+  height: 90px;
+  z-index: 9999;
+}
+
+nav{
+  font-size: 12px;
+  padding-top: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  display: flex;
+  align-items: center;
+}
+
+.left img{
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.nav-options{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.container{
+  padding: 0 10vw;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 0 12px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+nav ul li :hover{
+  text-decoration: 2px solid blue overline;
+  font-size: larger;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.right{
+  display: flex;
+  align-items: center;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.profile img{
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.Wishlist{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.Wishlist img{
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.bag{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bag img{
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.text{
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.text:hover{
+  text-decoration: 2px solid blue underline;
+  font-size: larger;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.search{
+  width: 40vh;
+  height: 50%;
+  padding: 7px 17px;
+  border: 0.5px solid grey;
+  background: #f7f8fd;
+  border-radius: 5px;
+}
+
+/* products */
+
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 30px 20px #0009);
+}
+
+.listProduct{
+    margin: 100px auto;
+    /* padding: 20px; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    width: 60%;
+    /* border: 1px solid black; */
+}
+
+.listProduct .item{
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+    /* margin-left: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.listProduct .item img{
+    border-radius: 20px;
+}
+
+.listProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+
+.listProduct .item .price{
+    letter-spacing: 4px;
+    font-size: small;
+}
+
+.listProduct .item button{
+    background-color: #353432;
+    color: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* cart */
+.cartTab{
+  width: 400px;
+  margin-top: 100px;
+  background-color: #353432;
+  color: #eee;
+  position: fixed;
+  inset: 0 -400px 0 auto;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  transition: 0.5s;
+}
+
+body.showCart .cartTab{
+  inset: 0 0 0 auto;
+}
+
+/* body.showCart .container{
+  transform: translateX(-230px);
+} */
+
+body.showCart .listProduct{
+  transform: translateX(-200px);
+}
+
+.cartTab h1{
+  padding: 20px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.cartTab .btn{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button{
+  background-color: #E8BC0E;
+  border: none;
+  font-family: Poppins;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cartTab .btn .close{
+  background-color: #eee;
+}
+
+.cartTab .listCart .item img{
+  width: 100px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.cartTab .listCart .item{
+  display: grid;
+  grid-template-columns: 70px 150px 50px 1fr;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.listCart .name{
+  padding-left: 50px;
+}
+
+.listCart .quantity span{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  color: #555;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2){
+  background-color: transparent;
+  color: #eee;
+}
+
+.listCart .item:nth-child(even){
+  background-color: #eee1;
+}
+
+.listCart{
+  overflow: auto;
+}
+
+.listCart::-webkit-scrollbar{
+  width: 0;
+}

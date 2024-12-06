@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":"Men's Solid Black Shirt",
+        "price": 2000,
+        "image": "img/product1.avif"
+    },
+    {
+        "id": 2,
+        "name":"Women's Designer Suit Set",
+        "price": 250, 
+        "image": "img/product2.avif"
+    },
+    {
+        "id": 3,
+        "name":"Men's Solid Black Shirt",
+        "price": 290,
+        "image": "img/product3.avif"
+    },
+    {
+        "id": 4,
+        "name":"Men's Solid Black Gezy Jeans",
+        "price": 2900,
+        "image": "img/product4.avif"
+    },
+    {
+        "id": 5,
+        "name":" LD05 LOUNGE CHAIR",
+        "price": 300,
+        "image": "img/item1.webp"
+    },
+    {
+        "id": 6,
+        "name":" LD06 LOUNGE CHAIR",
+        "price": 900,
+        "image": "img/item2.webp"
+    },
+    {
+        "id": 7,
+        "name":" LD07 LOUNGE CHAIR",
+        "price": 700,
+        "image": "img/item3.webp"
+    },
+    {
+        "id": 8,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 400,
+        "image": "img/item4.webp"
+    }
+
+]
